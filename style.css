@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+ul {
+  list-style: none;
+}
+.grid-container {
+  display: grid;
+  grid-template:
+    "left-menu-bar header" 50px
+    "left-menu-bar main-page" 1fr
+    "footer footer" 50px /
+    175px 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+.header {
+  grid-area: header;
+  height: 50px;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.863);
+}
+.left-menu-bar {
+  grid-area: left-menu-bar;
+  background-color: rgb(0, 0, 0);
+  color: rgb(168, 168, 168);
+  /* height: 100%;
+  width: 100px; */
+}
+.main-page {
+  grid-area: main-page;
+  background-color: rgba(0, 0, 0, 0.808);
+}
+.footer {
+  grid-area: footer;
+  background-color: rgba(94, 94, 94);
+
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  padding: 10px;
+  height: 50px;
+}
+.left-menu-icons {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  /* border: solid black; */
+}
+.left-menu-grid {
+  display: grid;
+}
+.left-menu-bar-two {
+  background-color: rgb(0, 0, 0);
+}
+.left-menu-icons h3 {
+  color: white;
+}
+.two-column-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+  padding: 0;
+  margin-top: 10px;
+}
+.create-playlist {
+  align-self: center;
+}
+.left-menu-icons-style {
+  align-self: center;
+}
+.profile {
+  padding: 0;
+  margin-top: 1rem;
+  /* justify-content: left; */
+}
+.profile h4 {
+  color: white;
+}
+/* .profile li {
+  margin: 0;
+  padding: 0;
+} */
+.two-column-grid-profile {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+  padding: 0;
+  height: 50px;
+}
+/* .seperate {
+  min-height: auto;
+  max-height: 100vh;
+} */
+.album-cover {
+  height: 200px;
+  width: 100%;
+  /* border: dotted white; */
+}
+.music-section {
+  color: white;
+}
+.music-section ul {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.music-section h2 {
+  margin-bottom: 1rem;
+}
+
+.music-section h3,
+.music-section p {
+  margin-bottom: 0.5rem;
+}
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+/* .music-section h3 {
+ 
+} */
+.text-align__center {
+  text-align: center;
+}
+.footer .center {
+  text-align: center;
+  /* background-color: #00ff0040; */
+}
+
+.footer .center .buttons {
+  /* background-color: #00ffff40; */
+
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-gap: 50px;
+}
+
+/* .footer .center .buttons .button {
+  /* border: solid 1px black;
+  padding: 10px; */
+ */
+
+.footer .center .bar {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  grid-gap: 10px;
+}
+
+.footer .center .bar .progress-bar {
+  display: grid;
+  align-content: center;
+}
+
+.footer .center .bar .progress-bar .progress-wrapper {
+  height: 10px;
+  /* border: solid 1px black; */
+  border-radius: 5px;
+  background-color: #535353;
+  overflow: hidden;
+}
+
+.footer .center .bar .progress-bar .progress-completion {
+  background-color: #bababa;
+  height: 100%;
+  width: 20%;
+
+  transition: 3s;
+}
+
+.footer .center .bar .progress-bar:hover .progress-completion {
+  width: 80%;
+}
